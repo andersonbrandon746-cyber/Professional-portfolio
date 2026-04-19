@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Professional Portfolio Hub</title>
+    <style>
+        /* 1. THE FOUNDATION */
+        body {
+            background-color: #020617 !important; /* Forced Dark Background */
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .main-container {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .column {
+            text-align: center;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #38bdf8;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+        }
+
+        /* 2. THE BOXES (All same size now) */
+        .box {
+            width: 320px;
+            height: 380px;
+            background: #1e293b;
+            border: 2px solid #334155;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .side-box {
+            opacity: 0.6;
+            transform: scale(0.9);
+            cursor: pointer;
+        }
+
+        .side-box:hover {
+            opacity: 1;
+            transform: scale(1.0);
+            border-color: #00ffcc;
+        }
+
+        /* 4. SLIDESHOW INTERNALS */
+        #slide-content {
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #slide-title {
+            color: #38bdf8;
+            margin-top: 0;
+        }
+
+        .slide-counter {
+            font-size: 0.7rem;
+            color: #64748b;
+            position: absolute;
+            top: 20px;
+        }
+
+        button {
+            background: #38bdf8;
+            border: none;
+            color: #020617;
+            padding: 12px 25px;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #00ffcc;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
+        }
+
+        .icon {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        
+        <div class="column">
+            <div class="label">The Game</div>
+            <div class="box side-box">
+                <div class="icon">🎮</div>
+                <p style="color: #64748b;">Informational Quest</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="label">Main Portfolio</div>
+            <div class="box middle-box">
+                
+                <div id="slide-content">
+                    <h2 id="slide-title">slides</h2>
+                    <p id="slide-text">This is my custom professional playground.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+    
+    </script>
+
+</body>
+</html>
